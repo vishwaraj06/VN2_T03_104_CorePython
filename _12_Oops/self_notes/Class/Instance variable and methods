@@ -1,0 +1,13 @@
+Instance variables are owned by instances of the class. This means that for each object or instance of a class, the instance variables are different.
+
+Unlike class variables, instance variables are defined within methods.
+
+In the Shark class example below, name and age are instance variables:
+
+class Shark:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    # Method with instance variable followers
+    def set_followers(self, followers):

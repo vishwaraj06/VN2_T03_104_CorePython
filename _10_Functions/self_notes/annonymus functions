@@ -1,0 +1,50 @@
+Lambda
+Lambda is a keyword in Python used to define functions, more specifically Anonymous Functions, and such functions are known as Lambda Functions or Lambda Expressions.
+lambda arguments: expression
+
+1.Map
+2.Filter
+3.Reduce
+
+MAP Function:
+The map function takes in a function and an iterable(list, tuple, etc.) as an input; applies passed function to each item of an iterable and returns a map object(an iterator).
+
+method 1:
+def square(n):
+    return n ** 2
+squares = map(square, range(1, 10, 2))
+squares
+# returns map object
+list(squares)
+
+# Output: [1, 9, 25, 49, 81]
+
+Methods 2:using lambda
+squares = list(map(lambda n: n ** 2, range(1, 10, 2)))
+
+num1 = [2, 4, 9]
+num2 = [3, 8, 5]
+result = list(map(lambda x, y: x + y, num1, num2))
+result
+# Output: [5, 12, 14]
+
+2.Filter
+Let’s say you want to find the odd numbers from a given list. A quick way to approach this problem is to use a for loop inside a list comprehension.
+filter(function, iterable)
+
+nums = [1, 34, 23, 56, 89, 44, 92]
+odds = list(filter(lambda x: x % 2 != 0, nums))
+print(odds)
+
+# Output: [1, 23, 89]
+
+3.REDUCE:
+Let’s say you want to compute a sum of the first five integers.
+reduce(function, iterable, [, initializer])
+from functools import reduce
+
+nums = [1, 2, 3, 4, 5]
+summ = reduce(lambda x, y: x + y, nums)
+summ
+
+# Output: 15

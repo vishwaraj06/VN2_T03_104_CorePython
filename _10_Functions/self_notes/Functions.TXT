@@ -1,0 +1,36 @@
+Functions are the most important aspect of an application
+function is the block of code which only runs when called.
+Python allows us to divide a large program into the basic building blocks known as a function.
+The function contains the set of programming statements enclosed by {}.
+A function can be called multiple times to provide re-usability and modularity to the Python program
+Python provide us various inbuilt functions like range() or print().
+Although, the user can create its functions, which can be called user-defined functions.
+
+There are mainly two types of functions.
+
+User-define functions - The user-defined functions are those define by the user to perform the specific task.
+Built-in functions - The built-in functions are those functions that are pre-defined in Python.
+
+Advantages of Python functions.
+
+*Using functions, we can avoid rewriting the same logic/code again and again in a program.
+*We can call Python functions multiple times in a program and anywhere in a program.
+*We can track a large Python program easily when it is divided into multiple functions.
+*Re-usability is the main achievement of Python functions.
+*However, Function calling is always overhead in a Python program.
+
+user defined function:(def keyword is used to define function)
+
+    syntax:
+        def function(parameters):
+           function body
+          return expression
+
+
+Rules:
+
+1.The def keyword, along with the function name is used to define the function.
+2.The identifier rule must follow the function name.
+3.A function accepts the parameter (argument), and they can be optional.
+4.The function block is started with the colon (:), and block statements must be at the same indentation.
+5.The return statement is used to return the value. A function can have only one return

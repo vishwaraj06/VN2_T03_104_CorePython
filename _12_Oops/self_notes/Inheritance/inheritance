@@ -1,0 +1,29 @@
+ Inheritance:
+ process of inheriting the properties of the parent class into a child class is called inheritance
+
+  class BaseClass:
+    Body of base class
+  class DerivedClass(BaseClass):
+    Body of derived class
+
+  Types of inheritance:
+    * Single inheritance
+    *Multiple Inheritance
+    *Multilevel inheritance
+    * Hierarchical Inheritance
+    * Hybrid Inheritance
+
+SINGLE
+
+single inheritance, a child class inherits from a single-parent class. Here is one child class and one parent class.
+
+MULTIPLE
+
+multiple inheritance, one child class can inherit from multiple parent classes. So here is one child class and multiple parent classes.
+
+
+MULTILEVEL
+
+multilevel inheritance, a class inherits from a child class or derived class.
+Suppose three classes A, B, C. A is the superclass, B is the child class of A, C is the child class of B.
+In other words, we can say a chain of classes is called multilevel inheritance.

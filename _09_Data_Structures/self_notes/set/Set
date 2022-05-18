@@ -1,0 +1,4 @@
+A set is created by placing all the items (elements) inside curly braces {},
+separated by comma, or by using the built-in set() function.
+It can have any number of items and they may be of different types (integer, float, tuple, string etc.).
+But a set cannot have mutable elements like lists, sets or dictionaries as its elements. it follows hashing algorithms

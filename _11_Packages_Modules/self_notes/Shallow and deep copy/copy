@@ -1,0 +1,74 @@
+Shallow Copy and Deep Copy in Python:
+
+Copy in Python:
+As we all know, the assignment operator is used to create the copy of the Python object, but this is not true;
+it only create the binding between a target and object.
+When we use the assignment operator, instead of creating a new object, it creates a new variable that shares the old object's reference.
+The copies are helpful when a user wants to make changes without modifying the original object at the same time.
+A user also prefers to create a copy to work with mutable objects.
+
+Types of Copies in Python
+The main motive is to create a copy of Python object that we can modify the copy without changing the original data. In Python, there are two methods to create copies.
+
+Shallow Copy
+shallow copy is a copy of an object that stores the reference of the original elements.
+It creates the new collection object and then occupying it with reference to the child objects found in the original.
+
+examples
+1.import copy
+old_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+new_list = copy.copy(old_list)
+print("Old list:", old_list)
+print("New list:", new_list)
+
+output:
+Old list: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+New list: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+2.import copy
+
+old_list = [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
+new_list = copy.copy(old_list)
+
+old_list.append([4, 4, 4])
+
+print("Old list:", old_list)
+print("New list:", new_list)
+
+output:
+
+Old list: [[1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4]]
+New list: [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
+
+Deep Copy
+A deep copy is a process where we create a new object and add copy elements recursively.
+We will use the deepcopy() method which present in copy module
+
+example:
+import copy
+old_list = [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
+new_list = copy.deepcopy(old_list)
+print("Old list:", old_list)
+print("New list:", new_list)
+
+output:
+
+Old list: [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
+New list: [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
+
+2.import copy
+old_list = [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
+new_list = copy.deepcopy(old_list)
+old_list[1][0] = 'BB'
+print("Old list:", old_list)
+print("New list:", new_list)
+
+
+ output:
+
+ Old list: [[1, 1, 1], ['BB', 2, 2], [3, 3, 3]]
+New list: [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
+
+
+A shallow copy creates a new compound object and then adds a reference to the object found in the original.
+A deep copy creates a new compound object and then adds a reference to the object found in the original.

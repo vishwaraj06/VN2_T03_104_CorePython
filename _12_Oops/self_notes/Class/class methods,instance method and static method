@@ -1,0 +1,43 @@
+class MyClass:
+    def method(self):
+        return 'instance method called', self
+
+    @classmethod
+    def classmethod(cls):
+        return 'class method called', cls
+
+    @staticmethod
+    def staticmethod():
+        return 'static method called'
+
+@staticmethod and @classmethod decorators are available as of Python
+
+1.INSTANCE METHOD:
+
+1.first method on MyClass, called method, is a regular instance method.
+2.Self parameter, instance methods can freely access attributes and other methods on the same object
+
+Decorators are used to modify the behaviour of function or class.
+In Decorators, functions are taken as the argument into another function and then called inside the wrapper function.
+
+ @gfg_decorator
+ def hello_decorator():
+     print("Gfg")
+
+2.CLASS METHODS:
+
+Instead of accepting a self parameter, class methods take a cls parameter that points to the class
+Because the class method only has access to this cls argument, it can’t modify object instance state.
+
+3.STATIC METHODS:
+
+This type of method takes neither a self nor a cls parameter.
+
+Therefore a static method can neither modify object state nor class state. Static methods are restricted in what data they can access
+
+ BEHAVIOR
+    -------------
+    # class method      : works only on class variables
+    # instance method   : works only on instance variables
+                          works on both instance,class variables
+    # static method     : neither on class nor on instance variables

@@ -1,0 +1,4 @@
+A tuple is a collection of objects which ordered and immutable
+() comma seperator
+tuple=(25,'raj',45,'tharun')
+tuple=(20) not consider as tuple.tuple=(20,)

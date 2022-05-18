@@ -1,0 +1,2 @@
+def fibonaci(a):
+    

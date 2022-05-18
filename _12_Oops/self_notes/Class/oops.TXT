@@ -1,0 +1,47 @@
+oops:
+   class-->serves as the TEMPLATE from which the INDIVIDUAL OBJECTS are created
+
+points on Python class:  
+
+1.Classes are created by keyword class.
+2.Attributes are the variables that belong to a class.
+3.Attributes are always public and can be accessed using the dot (.) operator. Eg.: Myclass.Myattribute
+
+Syntax:
+
+class ClassName:
+    # Statement-1
+    .
+    .
+    .
+    # Statement-N
+
+Defining a class:
+  
+     class parrot()
+       pass
+
+
+why we need class:
+
+1.To simplify the programming structure
+2.Classes provides the ability to reuse the code
+3.Grouping related functions and keeping them in one place (inside a class) provides a clean structure to the code which increases the readability of the program.
+4.Classes also help in overriding any standard operator.
+
+
+Objects:
+  
+      objects-->INSTANCES of class which consists of METHODS and PROPERTIES
+  
+A data filled in lass is called object.it hold the data in and classes define what data should be stored
+
+
+
+Attributes:
+      the properties of an object are called attributes.
+Methods:
+       1.methods are function but they are only available for class they defined
+       2.They usally do processing in the class varaiable
+       3.they are called via the object ad cannot be called independently
+       

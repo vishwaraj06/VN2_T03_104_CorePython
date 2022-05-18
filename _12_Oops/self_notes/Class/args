@@ -1,0 +1,22 @@
+we can pass a variable number of arguments to a function using special symbols. There are two special symbols:
+
+*args (Non Keyword Arguments)
+**kwargs (Keyword Arguments)
+
+
+*args:
+    Python has *args which allow us to pass the variable number of non keyword arguments to function.
+
+In the function, we should use an asterisk * before the parameter name to pass variable length arguments.
+The arguments are passed as a "TUPLE" and these passed arguments make tuple inside the function with same name as the parameter excluding asterisk *
+
+**kwargs:
+    **kwargs, it allows us to pass the variable length of keyword arguments to the function.
+    In the function, we use the double asterisk ** before the parameter name to denote this type of argument.
+    The arguments are passed as a "DICTIONARY" and these arguments make a dictionary inside function with name same as the parameter excluding double asterisk **
+
+Things to Remember:
+*args and **kwargs are special keyword which allows function to take variable length argument.
+*args passes variable number of non-keyworded arguments and on which operation of the tuple can be performed.
+**kwargs passes variable number of keyword arguments dictionary to function on which operation of a dictionary can be performed.
+*args and **kwargs make the function flexible.
