@@ -1,0 +1,10 @@
+Method Resolution Order(MRO) is the order by which Python looks for a method or attribute.
+First, the method or attribute is searched within a class, and then it follows the order we specified while inheriting.
+This order is also called the Linearization of a class, and a set of rules is called MRO (Method Resolution Order).
+The MRO plays an essential role in multiple inheritances as a single method may found in multiple parent classes.
+
+In multiple inheritance, the following search order is followed.
+
+1>First, it searches in the current parent class if not available,
+then searches in the parents class specified while inheriting (that is left to right.)
+2>We can get the MRO of a class. For this purpose, we can use either the mro attribute or the mro() method
